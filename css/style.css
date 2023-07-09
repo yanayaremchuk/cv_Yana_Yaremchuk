@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Mali:wght@200;300;400;700&display=swap');
+body {
+    font-family:'Mali', cursive;
+    font-size: calc(16px + 4 * (100vw / 1290));
+    color: #1E212C;
+    line-height: 1.2;
+    font-weight: 100;
+}
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+[class*="__container"]{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-left: 15px;
+	padding-right: 15px;
+}
+
+.wrapper {
+}
+.header {
+    background-image: linear-gradient(120deg, #575754, #313739);
+    margin-bottom: 30px;
+}
+.header__container {
+}
+.header__foto {
+    position: relative ;
+    left: 40%;
+}
+.header__foto img {
+    width: 20%;
+    border-radius: 50%;
+}
+.header__info {
+}
+.title {
+    font-weight: 700;
+   font-size: calc(40px + 10 * (100vw / 1290));
+   text-align: center;
+   line-height: 1.6;
+   color: black;
+}
+.subtitle {
+    font-weight: 600;
+    font-size: calc(24px + 4 * (100vw / 1290));
+    text-align: center;
+    color: rgb(228, 236, 233);
+    line-height: 1.6;
+    position: relative;
+    font-weight: 700;
+}
+.subtitle:hover{
+    color: #c0b5c2;
+}
+/*.subtitle::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0px;
+    left: 0%;
+    height: 1.5px;
+    transition: width 0.3s ease 0s;
+    background-color: #c0b5c2;
+}
+.subtitle:hover::after{
+    width: 50%;
+    padding-left: 20px;
+    color: #c0b5c2;
+}*/
+.main {
+}
+.main__container {
+}
+.block {
+    display: flex;
+    gap: 10%;
+}
+.block__info {
+    flex: 0 1 20%;
+}
+.block__personal-info{
+    flex: 0 1 70%;
+}
+.block__contact {
+}
+.contact-block {
+    font-size: calc(10px + 6 * (100vw / 1290));
+    color: #575754;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column ;
+}
+.contact-block__info{
+    border: 1px solid #575754;
+    border-radius: 50px;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    display: flex;
+   
+}
+.contact-block__info:before{
+    content: '';
+    flex: 0 1 50px;
+    background-image: url(..//img/telefon.png);
+    background-size: 70% 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #575754;
+    border-radius: 50%;
+}
+.contact-block__info--phone {
+   /* position: relative;*/
+}
+
+.contact-block__info--phone {
+  
+}
+.contact-block__detail{
+    position: relative;
+    top:30%;
+    left: 5%;
+}
+.contact-block__info--mail::before {
+    background-image: url(..//img/mail.png);
+    
+}
+.contact-block__info--birth {
+}
+.contact-block__info--birth::before {
+    background-image: url(..//img/me.png);
+}
+.contact-block__info--city {
+
+}
+.contact-block__info--city::before {
+
+    background-image: url(..//img/lokalization.png);
+}
+.contact-block__info--social {
+    border-style: none;
+ 
+}
+.contact-block__info--social::before {
+   content: '';
+   background: none;
+
+ 
+}
+.contact-block__info--social {
+    border-style: none;
+ 
+}
+.contact-block__info:hover {
+    transform: scale(1.1,1.1);
+    transition: all 0.5s ease 0s;
+}
+
+.social-networks {
+    display: flex;    
+   /* justify-content: center ;*/
+    gap: 10%;
+    
+}
+.social-networks__img:hover {
+    transform: scale(1.2,1.2);
+    transition: all 0.5s ease 0s;
+}
+.social-networks__img {
+    flex: 0 1 30%;
+    aspect-ratio: 1 / 1;
+}
+.social-networks__img img {
+    width: 70%;
+    height: 70%;
+    margin-left: -20px;
+    
+}
+
+.block__personal-info {
+}
+.personal-block {
+
+
+}
+.personal-block__about-me {
+    text-align:justify
+
+}
+.me-block {
+}
+.me-block__subtitle {
+    color: #1E212C;
+}
+.subtitle {
+}
+.me-block__about-me {
+}
+
+.personal-block__my-works {
+}
+.my-works {
+}
+.my-works__subtitle {
+    color: #1E212C;
+}
+.subtitle {
+
+}
+.my-works__lista {
+}
+
+.my-works__link {
+    padding: 1%;
+    /*font-weight: 400;*/
+    position: relative;
+}
+.my-works__link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0px;
+    left: 0%;
+    height: 1.5px;
+    transition: width 0.3s ease 0s;
+    background-color: #585b65;
+}
+.my-works__link:hover::after{
+    width: 80%;
+}
+.my-works__linkfocus{
+    color: aqua;
+}
+.personal-block__education {
+}
+.education {
+    
+}
+.education__subtitle {
+    color:#1E212C;
+}
+.subtitle {
+}
+.education__university {
+    font-weight: 600;
+    text-align: center;
+    color: #575754;
+}
+.education__diplom {
+    display: grid ;
+    grid-template-columns: 30% 60% ;
+    grid-template-rows: repeat(3,1fr) ;
+    padding-top: 20px;
+}
+.education__diploma-of::after {
+    content: '';
+    background-color: black;
+    height: 1px;
+    display: block;
+  }
+.education__diploma-of {
+    
+    font-weight: 300;
+}
+.education__years {
+}
+.education__speciality {
+    font-weight: 300;
+}
+.education__speciality-info {
+}
+.education__professional-qualification {
+    font-weight: 300;
+}
+.education__professional-qualification-info {
+}
+.social-networks__img--twitter {
+}
+.social-networks__img--facebook {
+}
+.social-networks__img--instagram {
+}
+
+.block__personal-info {
+}
+.personal-block {
+    margin-bottom: 20px;
+}
+.personal-block__education {
+}
+.education__subtitle {
+}
+.education__all {
+}
+.education__years {
+}
+.education__info {
+}
+.footer__container p {
+    text-align: right;
+    padding-right: 7%;
+    font-weight: 400;
+}
+
+@media (max-width: 1199.98px){
+    .block {
+        gap: 5%;
+    }
+    .block__info {
+        flex: 0 1 30%;
+    }
+    .block__personal-info{
+        flex: 0 1 80%;
+    
+    }
+ }
+@media (max-width: 990.98px) { }
+
+@media (max-width: 767.98px) {
+    .education__diplom {
+        display: grid ;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+        padding-top: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .block {
+        flex-wrap: wrap;
+    }
+    .block__info {
+        flex: 0 1 100%;
+    }
+    .block__personal-info{
+        flex: 0 1 100%;
+    
+    }
+    .title{
+        line-height: 1;
+    }
+    
+}
